@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Metadados Essenciais para SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALB Transportes</title>
+    <meta name="description"
+        content="Transporte seu carro, moto ou utilitário com segurança e agilidade. A ALB oferece serviço de transporte de veículos para todo o Brasil. Cotação online!">
+    <meta name="keywords"
+        content="transporte de veículos, cegonha, transporte de carros, levar carro para outro estado, transportadora de veículos, frete de veículos, avaliações transporte de veiculos">
+    <meta name="author" content="ALB Logística">
+    <link rel="canonical" href="https://www.ALB.com.br/">
+
+    <!-- Open Graph Meta Tags (para compartilhamento em redes sociais) -->
+    <meta property="og:title" content="ALB | Transporte de Veículos para Todo o Brasil">
+    <meta property="og:description"
+        content="Transporte seu carro, moto ou utilitário com segurança e agilidade. Serviço porta a porta com seguro total. Faça uma cotação online!">
+    <meta property="og:image" content="https://placehold.co/1200x630/003366/FFCC00?text=ALB">
+    <meta property="og:url" content="https://www.ALB.com.br/">
+    <meta property="og:type" content="website">
+
+    <!-- Swiper.js Carousel CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-blue': {
+                            '700': '#003366',
+                            '800': '#002244',
+                            '900': '#001122',
+                        },
+                        'brand-yellow': {
+                            '400': '#FFCC00',
+                            '500': '#E6B800',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans text-gray-800 antialiased">
+
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-brand-blue-700">
+                <img src="Logo.png" alt="Logo" style="width:70%;">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#servicos" class="text-gray-600 hover:text-brand-blue-700 transition duration-300">Serviços</a>
+                <a href="#como-funciona" class="text-gray-600 hover:text-brand-blue-700 transition duration-300">Como
+                    Funciona</a>
+                <a href="#clientes" class="text-gray-600 hover:text-brand-blue-700 transition duration-300">Clientes</a>
+                <a href="#faq" class="text-gray-600 hover:text-brand-blue-700 transition duration-300">Dúvidas</a>
+                <a href="#cotacao"
+                    class="bg-brand-yellow-400 text-brand-blue-800 font-semibold px-5 py-2 rounded-lg hover:bg-brand-yellow-500 transition duration-300 shadow-sm">
+                    Fazer Cotação
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button aria-label="Abrir menu" class="text-brand-blue-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-brand-blue-800 text-white bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 34, 68, 0.8), rgba(0, 34, 68, 0.8)), url('caminhao.jpg');">
+            <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                    Transporte de Veículos <span class="text-brand-yellow-400">Rápido e Seguro</span> para Todo o Brasil
+                </h1>
+                <p class="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-8">
+                    Coletamos e entregamos seu carro, moto ou utilitário em qualquer lugar do país com seguro total e
+                    rastreamento em tempo real.
+                </p>
+                <a href="#cotacao"
+                    class="bg-brand-yellow-400 text-brand-blue-800 font-bold px-8 py-4 rounded-lg text-lg hover:bg-brand-yellow-500 transition duration-300 transform hover:scale-105 shadow-lg">
+                    Solicite sua Cotação Grátis
+                </a>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-blue-800 mb-4">Transportamos Todos os Tipos de
+                    Veículos</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-12">Com frota moderna e equipe especializada, garantimos a
+                    integridade do seu bem mais valioso.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div
+                            class="bg-brand-blue-700 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 8L5.72187 10.2682C5.90158 10.418 6.12811 10.5 6.36205 10.5H17.6379C17.8719 10.5 18.0984 10.418 18.2781 10.2682L21 8M6.5 14H6.51M17.5 14H17.51M8.16065 4.5H15.8394C16.5571 4.5 17.2198 4.88457 17.5758 5.50772L20.473 10.5777C20.8183 11.1821 21 11.8661 21 12.5623V18.5C21 19.0523 20.5523 19.5 20 19.5H19C18.4477 19.5 18 19.0523 18 18.5V17.5H6V18.5C6 19.0523 5.55228 19.5 5 19.5H4C3.44772 19.5 3 19.0523 3 18.5V12.5623C3 11.8661 3.18166 11.1821 3.52703 10.5777L6.42416 5.50772C6.78024 4.88457 7.44293 4.5 8.16065 4.5ZM7 14C7 14.2761 6.77614 14.5 6.5 14.5C6.22386 14.5 6 14.2761 6 14C6 13.7239 6.22386 13.5 6.5 13.5C6.77614 13.5 7 13.7239 7 14ZM18 14C18 14.2761 17.7761 14.5 17.5 14.5C17.2239 14.5 17 14.2761 17 14C17 13.7239 17.2239 13.5 17.5 13.5C17.7761 13.5 18 13.7239 18 14Z"
+        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold text-brand-blue-800 mb-2">Carros e SUVs</h3>
+                        <p class="text-gray-600">Transporte seguro para seu carro de passeio, SUV ou picape, com coleta
+                            na sua porta.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div
+                            class="bg-brand-blue-700 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg fill="white" width="40px" height="40px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title>bike1</title>
+  <path d="M24 9h-4v-2h4c0.552 0 1 0.447 1 1 0 0.552-0.448 1-1 1zM21 0c0-1.657-1.343-3-3-3h-5c-1.657 0-3 1.343-3 3v6h-1v-6c0-2.209 1.791-4 4-4h5c2.209 0 4 1.791 4 4v6h-1v-6zM11 9h-4c-0.553 0-1-0.448-1-1 0-0.553 0.447-1 1-1h4v2zM15.5 11.5c-1.934 0-3.5-1.567-3.5-3.5 0-1.934 1.566-3.5 3.5-3.5s3.5 1.566 3.5 3.5c0 1.933-1.567 3.5-3.5 3.5zM15.5 6c-1.104 0-2 0.896-2 2s0.896 2 2 2 2-0.896 2-2-0.896-2-2-2zM12.112 10.106c0.706 1.133 1.954 1.894 3.388 1.894s2.681-0.761 3.388-1.894c1.78 0.405 3.112 1.991 3.112 3.894v10c0 1.861-1.278 3.412-3 3.858v-5.421c0-1.933-1.567-3.5-3.5-3.5s-3.5 1.567-3.5 3.5v5.421c-1.723-0.446-3-1.997-3-3.858v-10c0-1.903 1.332-3.489 3.112-3.894zM15.5 20c1.381 0 2.5 1.119 2.5 2.5v7c0 1.381-1.119 2.5-2.5 2.5s-2.5-1.119-2.5-2.5v-7c0-1.381 1.119-2.5 2.5-2.5z"></path>
+</svg>
+
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue-800 mb-2">Motos</h3>
+                        <p class="text-gray-600">Sua moto viaja em plataforma própria e devidamente presa para garantir
+                            máxima segurança.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div
+                            class="bg-brand-blue-700 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg></div>
+                        <h3 class="text-xl font-bold text-brand-blue-800 mb-2">Utilitários e Vans</h3>
+                        <p class="text-gray-600">Soluções logísticas para o transporte de vans, furgões e pequenos
+                            utilitários comerciais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-blue-800 mb-12">Contrate em 3 Passos Simples</h2>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+                    <div class="flex flex-col items-center max-w-xs">
+                        <div
+                            class="bg-brand-yellow-400 text-brand-blue-800 font-bold text-2xl rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            1</div>
+                        <h3 class="text-xl font-semibold text-brand-blue-800 mb-2">Solicite a Cotação</h3>
+                        <p class="text-gray-600">Solicite pelo site por meio do formulário ou contate por <a target="_blank" href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FKWKTQVTI2PPYN1%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaem9lw-N031hKCYlUvEqgxq4UummQ0ufvh59TUjQnJn8xumW4zEcMYM-xPTgA_aem_u0UToKXj3prshcQ4qjNraw&e=AT1Rj-xQwCE2-RjUIFSVu8HlqHRvi4VoK0u-9DyRpSZtTNCK4Aq-h4fz5vhNxblVdqyxVTY7epRULfjE3hq37XeQd8dv2qgXkt82JXVoi-Q_rg-xvqinRc26wQ" class="text-[#25d366]">WhatsApp</a>  e seja atendido em minutos</p>
+                    </div>
+                    <div class="flex flex-col items-center max-w-xs">
+                        <div
+                            class="bg-brand-yellow-400 text-brand-blue-800 font-bold text-2xl rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            2</div>
+                        <h3 class="text-xl font-semibold text-brand-blue-800 mb-2">Agende a Coleta</h3>
+                        <p class="text-gray-600">Escolha a melhor data e local. Nossa equipe vai até você para retirar o
+                            veículo com total segurança.</p>
+                    </div>
+                    <div class="flex flex-col items-center max-w-xs">
+                        <div
+                            class="bg-brand-yellow-400 text-brand-blue-800 font-bold text-2xl rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            3</div>
+                        <h3 class="text-xl font-semibold text-brand-blue-800 mb-2">Receba seu Veículo</h3>
+                        <p class="text-gray-600">Acompanhe a viagem pelo nosso rastreador e receba seu veículo no
+                            destino com pontualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FKWKTQVTI2PPYN1%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaem9lw-N031hKCYlUvEqgxq4UummQ0ufvh59TUjQnJn8xumW4zEcMYM-xPTgA_aem_u0UToKXj3prshcQ4qjNraw&e=AT1Rj-xQwCE2-RjUIFSVu8HlqHRvi4VoK0u-9DyRpSZtTNCK4Aq-h4fz5vhNxblVdqyxVTY7epRULfjE3hq37XeQd8dv2qgXkt82JXVoi-Q_rg-xvqinRc26wQ" 
+            target="_blank"
+            style="z-index: 1000;" 
+            class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition transform hover:scale-110">
+    
+        <svg xmlns="http://www.w3.org/2000/svg" 
+                class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.52 3.48A11.78 11.78 0 0 0 12 0C5.37 0 .01 5.36.01 12c0 2.11.55 4.18 1.6 6.02L0 24l6.18-1.59A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22a9.9 9.9 0 0 1-5.07-1.37l-.36-.21-3.67.94.98-3.58-.23-.37A9.89 9.89 0 0 1 2 12c0-5.52 4.48-10 10-10 2.67 0 5.18 1.04 7.07 2.93A9.94 9.94 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.07-7.43c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.27-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.17-.43-2.23-1.38-.82-.73-1.38-1.62-1.54-1.9-.16-.27-.02-.42.12-.56.12-.12.28-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3s.99 2.67 1.12 2.85c.14.18 1.96 3.13 4.75 4.39.66.28 1.17.45 1.57.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.89-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.52-.32z"/>
+        </svg>
+        </a>
+
+
+        <section id="clientes" class="py-20 bg-white" style="overflow-x: hidden;">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-blue-800 mb-4">O Que Nossos Clientes Dizem</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-12">Confiança e satisfação são a base do nosso serviço.
+                    Veja algumas avaliações reais.</p>
+
+                <div class="swiper-container relative max-w-6xl mx-auto">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-gray-50 p-8 rounded-lg shadow-md text-left">
+                            <div class="flex items-center mb-4">
+                                <img src="https://placehold.co/48x48/003366/FFFFFF?text=JS" alt="Foto de João Silva"
+                                    class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-bold text-brand-blue-800">João Silva</h3>
+                                    <div class="flex items-center">
+                                        <span class="text-sm text-gray-500 mr-2">Avaliado no</span>
+                                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <path fill="#4285F4"
+                                                d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-600 italic">"Serviço impecável! Meu carro chegou de São Paulo ao Ceará
+                                antes do prazo e em perfeito estado. A comunicação foi excelente durante todo o
+                                processo."</p>
+                        </div>
+                        <div class="swiper-slide bg-gray-50 p-8 rounded-lg shadow-md text-left">
+                            <div class="flex items-center mb-4">
+                                <img src="https://placehold.co/48x48/003366/FFFFFF?text=MP" alt="Foto de Maria Pereira"
+                                    class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-bold text-brand-blue-800">Maria Pereira</h3>
+                                    <div class="flex items-center">
+                                        <span class="text-sm text-gray-500 mr-2">Avaliado no</span>
+                                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <path fill="#4285F4"
+                                                d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-600 italic">"Estava com receio de transportar minha moto, mas a equipe
+                                da ALB foi super cuidadosa. Embalaram corretamente e ela chegou perfeita. Recomendo
+                                demais!"</p>
+                        </div>
+                        <div class="swiper-slide bg-gray-50 p-8 rounded-lg shadow-md text-left">
+                            <div class="flex items-center mb-4">
+                                <img src="https://placehold.co/48x48/003366/FFFFFF?text=RC" alt="Foto de Ricardo Costa"
+                                    class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-bold text-brand-blue-800">Ricardo Costa</h3>
+                                    <div class="flex items-center">
+                                        <span class="text-sm text-gray-500 mr-2">Avaliado no</span>
+                                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <path fill="#4285F4"
+                                                d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-600 italic">"Preço justo e serviço de primeira. O rastreamento online me
+                                deixou muito tranquilo durante a viagem do meu utilitário. Empresa séria e confiável."
+                            </p>
+                        </div>
+                        <div class="swiper-slide bg-gray-50 p-8 rounded-lg shadow-md text-left">
+                            <div class="flex items-center mb-4">
+                                <img src="https://placehold.co/48x48/003366/FFFFFF?text=AL" alt="Foto de Ana Luiza"
+                                    class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-bold text-brand-blue-800">Ana Luiza</h3>
+                                    <div class="flex items-center">
+                                        <span class="text-sm text-gray-500 mr-2">Avaliado no</span>
+                                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <path fill="#4285F4"
+                                                d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-600 italic">"Fiquei impressionada com a pontualidade e o cuidado.
+                                Transportaram meu carro de Curitiba para o Rio de Janeiro e o rastreamento funcionou
+                                perfeitamente. Atendimento nota 10!"</p>
+                        </div>
+                        <div class="swiper-slide bg-gray-50 p-8 rounded-lg shadow-md text-left">
+                            <div class="flex items-center mb-4">
+                                <img src="https://placehold.co/48x48/003366/FFFFFF?text=FM"
+                                    alt="Foto de Fernando Martins" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-bold text-brand-blue-800">Fernando Martins</h3>
+                                    <div class="flex items-center">
+                                        <span class="text-sm text-gray-500 mr-2">Avaliado no</span>
+                                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <path fill="#4285F4"
+                                                d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-600 italic">"Recomendo a ALB a todos. O processo de cotação foi rápido e
+                                o preço foi o mais competitivo que encontrei. O veículo chegou intacto. Serviço
+                                profissional."</p>
+                        </div>
+                        <div class="swiper-slide bg-gray-50 p-8 rounded-lg shadow-md text-left">
+                            <div class="flex items-center mb-4">
+                                <img src="https://placehold.co/48x48/003366/FFFFFF?text=GS"
+                                    alt="Foto de Gabriela Santos" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-bold text-brand-blue-800">Gabriela Santos</h3>
+                                    <div class="flex items-center">
+                                        <span class="text-sm text-gray-500 mr-2">Avaliado no</span>
+                                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <path fill="#4285F4"
+                                                d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-5 h-5 text-brand-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-600 italic">"Utilizei o serviço para levar uma van para outro estado. A
+                                equipe foi muito prestativa e tirou todas as minhas dúvidas. Chegou tudo certo, dentro
+                                do combinado. Excelente!"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next text-brand-blue-700"></div>
+                    <div class="swiper-button-prev text-brand-blue-700"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cotacao" class="py-20 bg-brand-blue-700">
+            <div class="container mx-auto px-6">
+                <div class="bg-white rounded-lg shadow-xl p-8 md:p-12">
+                    <h2 class="text-3xl font-bold text-center text-brand-blue-800 mb-6">Faça uma Cotação Rápida e
+                        Gratuita</h2>
+                    <form id="quote-form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required
+                            class="p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-yellow-400 focus:outline-none">
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required
+                            class="p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-yellow-400 focus:outline-none">
+                        <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone com DDD" required
+                            class="p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-yellow-400 focus:outline-none">
+                        <input type="text" id="veiculo" name="veiculo" placeholder="Marca e Modelo do Veículo" required
+                            class="p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-yellow-400 focus:outline-none">
+                        <input type="text" id="origem" name="origem" placeholder="Cidade de Origem" required
+                            class="p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-yellow-400 focus:outline-none">
+                        <input type="text" id="destino" name="destino" placeholder="Cidade de Destino" required
+                            class="p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-yellow-400 focus:outline-none">
+                        <button type="submit"
+                            class="md:col-span-2 bg-brand-yellow-400 text-brand-blue-800 font-bold p-4 rounded-lg text-lg hover:bg-brand-yellow-500 transition duration-300 shadow-md">
+                            Visualizar Rota e Pedir Orçamento
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="mapa-section" class="py-20 bg-gray-100 hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-blue-800 text-center mb-8">Visualização da Rota
+                </h2>
+                <div id="map-container"
+                    class="w-full h-96 bg-gray-300 rounded-lg shadow-lg flex items-center justify-center">
+                    <p class="text-gray-500">O mapa da sua rota aparecerá aqui.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-blue-800 text-center mb-12">Dúvidas Frequentes</h2>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <details class="bg-gray-50 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg text-brand-blue-800">O transporte do meu veículo é
+                            segurado?</summary>
+                        <p class="mt-2 text-gray-600">Sim! Todos os veículos transportados pela ALB contam com seguro
+                            total contra roubo, furto e avarias durante todo o trajeto, da coleta à entrega.</p>
+                    </details>
+                    <details class="bg-gray-50 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg text-brand-blue-800">Quanto tempo demora a entrega?
+                        </summary>
+                        <p class="mt-2 text-gray-600">O prazo de entrega varia conforme a distância entre a origem e o
+                            destino. Ao solicitar sua cotação, você receberá uma estimativa precisa do prazo para a sua
+                            rota.</p>
+                    </details>
+                    <details class="bg-gray-50 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg text-brand-blue-800">Posso enviar bagagem dentro do
+                            veículo?</summary>
+                        <p class="mt-2 text-gray-600">Por questões de segurança da carga e para cumprir a legislação,
+                            não é permitido o transporte de bagagens ou objetos pessoais dentro do veículo. Apenas o
+                            estepe, macaco e chave de roda são permitidos.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-brand-blue-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 ALB Transportes. Todos os direitos reservados.</p>
+            <p class="text-blue-200 mt-2">Transporte de veículos com segurança e confiança para todo o Brasil.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        const quoteForm = document.getElementById('quote-form');
+        const mapSection = document.getElementById('mapa-section');
+        const mapContainer = document.getElementById('map-container');
+
+        quoteForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const origin = document.getElementById('origem').value;
+            const destination = document.getElementById('destino').value;
+
+            if (origin && destination) {
+                const mapUrl = `https://maps.google.com/maps?saddr=${encodeURIComponent(origin)}&daddr=${encodeURIComponent(destination)}&output=embed`;
+
+                mapContainer.innerHTML = `<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="${mapUrl}" style="border-radius: 8px;"></iframe>`;
+
+                mapSection.classList.remove('hidden');
+
+                mapSection.scrollIntoView({ behavior: 'smooth' });
+
+                // const formData = new FormData(quoteForm);
+                // fetch('/enpoint', { method: 'POST', body: formData });
+                // alert('Orçamento solicitado! Em breve entraremos em contato.');
+            } else {
+                alert('Por favor, preencha as cidades de origem e destino para ver a rota.');
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
