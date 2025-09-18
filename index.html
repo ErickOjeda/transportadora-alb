@@ -85,7 +85,10 @@
                 </button>
             </div>
              <div id="mobile-menu" class="hidden md:hidden absolute top-0 left-0 w-full bg-white shadow-lg">
-                <div class="flex flex-col items-center space-y-6 py-8 mt-16">
+                <div class="flex flex-col items-center space-y-6 py-8 mt-8">
+                    <a href="#" class="w-1/2 max-w-[180px] mb-8">
+                        <img src="Logo.png" alt="Logo">
+                    </a>
                     <a href="#servicos" class="text-lg text-gray-600 hover:text-brand-blue-700">Serviços</a>
                     <a href="#como-funciona" class="text-lg text-gray-600 hover:text-brand-blue-700">Como Funciona</a>
                     <a href="#clientes" class="text-lg text-gray-600 hover:text-brand-blue-700">Clientes</a>
@@ -612,6 +615,14 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
+        });
+
+        document.addEventListener("click", (event) => {
+            const isClickInside = mobileMenu.contains(event.target) || menuBtn.contains(event.target);
+
+            if (!isClickInside && !mobileMenu.classList.contains("hidden")) {
+                mobileMenu.classList.add("hidden");
+            }
         });
     </script>
 </body>
