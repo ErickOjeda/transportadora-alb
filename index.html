@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Metadados Essenciais para SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALB Transportes</title>
@@ -13,7 +12,6 @@
     <meta name="author" content="ALB Logística">
     <link rel="canonical" href="https://www.ALB.com.br/">
 
-    <!-- Open Graph Meta Tags (para compartilhamento em redes sociais) -->
     <meta property="og:title" content="ALB | Transporte de Veículos para Todo o Brasil">
     <meta property="og:description"
         content="Transporte seu carro, moto ou utilitário com segurança e agilidade. Serviço porta a porta com seguro total. Faça uma cotação online!">
@@ -21,13 +19,10 @@
     <meta property="og:url" content="https://www.ALB.com.br/">
     <meta property="og:type" content="website">
 
-    <!-- Swiper.js Carousel CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -81,13 +76,24 @@
                 </a>
             </div>
             <div class="md:hidden">
-                <button aria-label="Abrir menu" class="text-brand-blue-700">
+                <button id="menu-btn" aria-label="Abrir menu" class="text-brand-blue-700 z-50">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </button>
+            </div>
+             <div id="mobile-menu" class="hidden md:hidden absolute top-0 left-0 w-full bg-white shadow-lg">
+                <div class="flex flex-col items-center space-y-6 py-8 mt-16">
+                    <a href="#servicos" class="text-lg text-gray-600 hover:text-brand-blue-700">Serviços</a>
+                    <a href="#como-funciona" class="text-lg text-gray-600 hover:text-brand-blue-700">Como Funciona</a>
+                    <a href="#clientes" class="text-lg text-gray-600 hover:text-brand-blue-700">Clientes</a>
+                    <a href="#faq" class="text-lg text-gray-600 hover:text-brand-blue-700">Dúvidas</a>
+                    <a href="#cotacao" class="bg-brand-yellow-400 text-brand-blue-800 font-semibold px-6 py-3 rounded-lg">
+                        Fazer Cotação
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -561,19 +567,16 @@
 
                 mapSection.scrollIntoView({ behavior: 'smooth' });
 
-                // const formData = new FormData(quoteForm);
-                // fetch('/enpoint', { method: 'POST', body: formData });
-                // alert('Orçamento solicitado! Em breve entraremos em contato.');
             } else {
                 alert('Por favor, preencha as cidades de origem e destino para ver a rota.');
             }
         });
     </script>
-
+    
     <script>
         var swiper = new Swiper('.swiper-container', {
             loop: true,
-            slidesPerView: 2,
+            slidesPerView: 1, // Exibe 1 slide por padrão (mobile)
             spaceBetween: 30,
             autoplay: {
                 delay: 5000,
@@ -585,7 +588,7 @@
             },
             breakpoints: {
                 768: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 30
                 },
                 1024: {
@@ -593,6 +596,22 @@
                     spaceBetween: 40
                 }
             }
+        });
+    </script>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = mobileMenu.querySelectorAll('a');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
     </script>
 </body>
